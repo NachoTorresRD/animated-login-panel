@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://animated-login-panel.netlify.app/sitemap.xml
