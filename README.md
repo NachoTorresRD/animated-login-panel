@@ -2,14 +2,15 @@
 
 ![Vista previa](assets/preview.svg)
 
-Panel visual de acceso y registro con pestañas animadas, validación local y contraseña visible.
+Panel compacto de acceso y registro con una pequeña cuadrilla animada que reacciona a cada paso del formulario.
 
 ## Características
 
 - Login y registro en tabs accesibles.
 - Validación frontend con errores asociados a cada campo.
-- Mostrar/ocultar contraseña.
-- No guarda ni envía información.
+- Un mensajero entrega el correo mientras el usuario escribe.
+- Un guardián se cubre los ojos al escribir la contraseña y mira al mostrarla.
+- Celebración conjunta con salto y confeti al completar el formulario.
 
 ## Demo en vivo
 
@@ -21,7 +22,7 @@ Clona el repositorio, entra en `animated-login-panel` y abre `index.html`.
 
 ## Estructura del proyecto
 
-Formularios en `index.html`, estados visuales en `style.css`, validación en `script.js` y SVG en `assets/`.
+Formularios y personajes en `index.html`, animaciones y estados visuales en `style.css`, e interacción y validación en `script.js`.
 
 ## Cómo personalizarlo
 
@@ -33,7 +34,7 @@ Tabs operables con flechas, etiquetas nativas, `aria-invalid`, errores enlazados
 
 ## Rendimiento
 
-Sin dependencias, solicitudes de red ni almacenamiento; las transiciones usan propiedades visuales ligeras.
+Sin dependencias, solicitudes de red ni almacenamiento; los personajes están construidos con HTML y CSS y respetan `prefers-reduced-motion`.
 
 ## Licencia y créditos
 

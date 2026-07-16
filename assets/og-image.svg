@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#0b0b10"/><circle cx="985" cy="300" r="220" fill="#ff8faf" opacity=".16"/><circle cx="985" cy="300" r="100" fill="none" stroke="#ff8faf" stroke-width="3"/><text x="70" y="160" fill="#ff8faf" font-family="monospace" font-size="22">NT FORM LAB</text><text x="70" y="278" fill="#f9f7ff" font-family="Arial" font-size="70" font-weight="800">Animated Login Panel</text><text x="70" y="360" fill="#aaa7b7" font-family="Arial" font-size="34">Free HTML, CSS &amp; JavaScript</text><text x="70" y="505" fill="#ff8faf" font-family="monospace" font-size="28">NachoTorresRD</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0a10"/>
+  <circle cx="985" cy="300" r="230" fill="#ff8fb3" opacity=".1"/>
+  <circle cx="985" cy="300" r="150" fill="none" stroke="#ff8fb3" stroke-opacity=".25"/>
+  <text x="70" y="128" fill="#ff8fb3" font-family="monospace" font-size="22">NT FORM LAB / 07</text>
+  <text x="70" y="252" fill="#fff9fc" font-family="Arial" font-size="72" font-weight="800">Animated</text>
+  <text x="70" y="330" fill="#ff8fb3" font-family="Arial" font-size="72" font-weight="800">Login Crew</text>
+  <text x="70" y="398" fill="#aaa5b8" font-family="Arial" font-size="28">Personajes que reaccionan al formulario</text>
+  <text x="70" y="525" fill="#ff8fb3" font-family="monospace" font-size="26">NachoTorresRD</text>
+  <g stroke="#21131b" stroke-width="6">
+    <ellipse cx="920" cy="480" rx="53" ry="10" fill="#050407" stroke="none" opacity=".55"/>
+    <rect x="884" y="318" width="72" height="92" rx="21" fill="#ff8fb3"/>
+    <circle cx="920" cy="291" r="32" fill="#ffd4bb"/>
+    <path d="M888 284q8-40 63-19l1 27" fill="#24141d"/>
+    <path d="M889 340l-16 60M951 340l16 60M900 409l-5 69M940 409l5 69" stroke="#ffd4bb" stroke-linecap="round"/>
+    <rect x="936" y="360" width="58" height="42" rx="7" fill="#c9ff72"/>
+  </g>
+  <g stroke="#21131b" stroke-width="6">
+    <ellipse cx="1055" cy="480" rx="53" ry="10" fill="#050407" stroke="none" opacity=".55"/>
+    <rect x="1019" y="318" width="72" height="92" rx="21" fill="#a98cff"/>
+    <circle cx="1055" cy="291" r="32" fill="#ffd4bb"/>
+    <path d="M1023 284q8-40 63-19l1 27" fill="#24141d"/>
+    <path d="M1025 345l23-42M1085 345l-23-42" stroke="#ffd4bb" stroke-linecap="round"/>
+    <path d="M1035 409l-5 69M1075 409l5 69" stroke="#30202d" stroke-linecap="round"/>
+  </g>
+  <path d="M1020 205h63m-63 0a22 22 0 1 1-22-22 22 22 0 0 1 22 22zm35 0v23m16-23v16" fill="none" stroke="#c9ff72" stroke-width="12"/>
+</svg>

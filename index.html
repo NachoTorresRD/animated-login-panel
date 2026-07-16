@@ -1,1 +1,141 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Animated Login Panel — Acceso y registro accesibles</title><meta name="description" content="Panel animado de login y registro con validación frontend y estados de error accesibles."><link rel="canonical" href="https://animated-login-panel.netlify.app/"><meta property="og:title" content="Animated Login Panel"><meta property="og:description" content="Login y registro visual sin envío de datos."><meta property="og:image" content="https://animated-login-panel.netlify.app/assets/og-image.svg"><meta property="og:type" content="website"><meta property="og:url" content="https://animated-login-panel.netlify.app/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Animated Login Panel"><meta name="twitter:description" content="Login y registro visual sin envío de datos."><meta name="twitter:image" content="https://animated-login-panel.netlify.app/assets/og-image.svg"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body><a class="skip" href="#auth">Saltar al formulario</a><header><a href="https://github.com/NachoTorresRD" target="_blank" rel="noreferrer"><b>NT</b> Form Lab</a><span>07 / 10</span></header><main><section class="intro"><p>Frontend auth concept</p><h1>Una entrada clara en <em>cada estado.</em></h1><span>Demostración visual: los datos se validan en este navegador y nunca se envían a un servidor.</span></section><section class="auth" id="auth"><div class="visual" aria-hidden="true"><span>DEMO / LOCAL ONLY</span><div><i></i><i></i><i></i></div><p>Tu información permanece en este dispositivo.</p></div><div class="forms"><div class="tabs" role="tablist" aria-label="Tipo de formulario"><button id="login-tab" role="tab" aria-selected="true" aria-controls="login-panel">Ingresar</button><button id="register-tab" role="tab" aria-selected="false" aria-controls="register-panel" tabindex="-1">Crear cuenta</button></div><div id="login-panel" role="tabpanel" aria-labelledby="login-tab"><h2>Bienvenido</h2><p>Usa cualquier correo válido y una contraseña de 8 caracteres.</p><form id="login-form" novalidate><label for="login-email">Correo electrónico</label><input id="login-email" name="email" type="email" autocomplete="email" required aria-describedby="login-email-error"><span class="error" id="login-email-error"></span><label for="login-password">Contraseña</label><div class="password"><input id="login-password" name="password" type="password" autocomplete="current-password" minlength="8" required aria-describedby="login-password-error"><button type="button" data-password="login-password" aria-label="Mostrar contraseña">Mostrar</button></div><span class="error" id="login-password-error"></span><button class="submit" type="submit">Ingresar a la demo</button></form></div><div id="register-panel" role="tabpanel" aria-labelledby="register-tab" hidden><h2>Crea tu acceso</h2><p>Este formulario no crea una cuenta real.</p><form id="register-form" novalidate><label for="register-name">Nombre</label><input id="register-name" name="name" autocomplete="name" required minlength="2" aria-describedby="register-name-error"><span class="error" id="register-name-error"></span><label for="register-email">Correo electrónico</label><input id="register-email" name="email" type="email" autocomplete="email" required aria-describedby="register-email-error"><span class="error" id="register-email-error"></span><label for="register-password">Contraseña</label><div class="password"><input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" required aria-describedby="register-password-error"><button type="button" data-password="register-password" aria-label="Mostrar contraseña">Mostrar</button></div><span class="error" id="register-password-error"></span><button class="submit" type="submit">Crear cuenta demo</button></form></div><p class="form-status" id="form-status" role="status" aria-live="polite"></p></div></section><section class="actions"><a class="primary" href="https://github.com/NachoTorresRD/animated-login-panel" target="_blank" rel="noreferrer">Ver código en GitHub ↗</a><a href="https://wa.me/18093408435?text=Hola%20Nacho,%20vi%20el%20efecto%20Animated%20Login%20Panel%20y%20me%20gustar%C3%ADa%20usarlo%20en%20mi%20p%C3%A1gina." target="_blank" rel="noreferrer">Quiero este efecto en mi página</a></section></main><footer><p>Built with <a href="https://github.com/NachoTorresRD/nt-skill-supreme" target="_blank" rel="noreferrer">NT-SKILL SUPREME</a> by Nacho Torres</p><a href="https://www.ntdesweb.com" target="_blank" rel="noreferrer">NTDESWEB</a></footer></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Animated Login Crew — Formulario reactivo</title>
+  <meta name="description" content="Una pequeña cuadrilla animada reacciona al correo, la contraseña y el estado de éxito del formulario.">
+  <link rel="canonical" href="https://animated-login-panel.netlify.app/">
+  <meta property="og:title" content="Animated Login Crew">
+  <meta property="og:description" content="Personajes diminutos que reaccionan mientras completas el formulario.">
+  <meta property="og:image" content="https://animated-login-panel.netlify.app/assets/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://animated-login-panel.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Animated Login Crew">
+  <meta name="twitter:description" content="Personajes diminutos que reaccionan mientras completas el formulario.">
+  <meta name="twitter:image" content="https://animated-login-panel.netlify.app/assets/og-image.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#auth">Saltar a la demostración</a>
+  <header>
+    <a href="https://github.com/NachoTorresRD" target="_blank" rel="noreferrer"><b>NT</b> Form Lab</a>
+    <span>07 / 10</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <p>Micro crew / auth</p>
+      <h1 id="title">Tu formulario ahora <em>tiene vida.</em></h1>
+      <span>Escribe, muestra la clave y completa la prueba. La pequeña cuadrilla seguirá cada paso.</span>
+      <div class="mode-hint">
+        <i aria-hidden="true"></i>
+        <p><strong>Animación contextual</strong><small>Sin imágenes ni librerías externas.</small></p>
+      </div>
+    </section>
+
+    <section class="auth scene-idle" id="auth" aria-label="Panel animado de acceso y registro">
+      <div class="visual">
+        <span class="visual-label">TINY AUTH CREW</span>
+
+        <div class="crew-scene" aria-hidden="true">
+          <div class="scene-status"><i></i><span id="scene-caption">Esperando correo</span></div>
+          <div class="signal signal-one"></div>
+          <div class="signal signal-two"></div>
+
+          <div class="inbox">
+            <span>@</span>
+            <i class="inbox-lid"></i>
+            <i class="inbox-slot"></i>
+            <b></b>
+          </div>
+
+          <div class="person courier">
+            <i class="shadow"></i>
+            <div class="head"><i class="hair"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="smile"></i></div>
+            <div class="body"></div>
+            <i class="arm arm-left"></i><i class="arm arm-right"></i>
+            <i class="leg leg-left"></i><i class="leg leg-right"></i>
+            <div class="envelope"><b>@</b><i></i></div>
+          </div>
+
+          <div class="person guard">
+            <i class="shadow"></i>
+            <div class="head"><i class="hair"></i><i class="eye eye-left"></i><i class="eye eye-right"></i><i class="smile"></i></div>
+            <div class="body"><span>•••</span></div>
+            <i class="arm arm-left"></i><i class="arm arm-right"></i>
+            <i class="hand hand-left"></i><i class="hand hand-right"></i>
+            <i class="leg leg-left"></i><i class="leg leg-right"></i>
+          </div>
+
+          <div class="key"><i></i><b></b><b></b></div>
+          <div class="confetti"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="ground"><i></i><i></i><i></i></div>
+        </div>
+
+        <div class="visual-copy">
+          <small id="visual-kicker">EQUIPO EN ESPERA</small>
+          <h2 id="visual-title">Todo listo<br>para empezar.</h2>
+          <p id="visual-text">Entra al primer campo y mira quién aparece.</p>
+        </div>
+      </div>
+
+      <div class="forms">
+        <div class="tabs" role="tablist" aria-label="Tipo de formulario">
+          <span class="tab-glider" aria-hidden="true"></span>
+          <button id="login-tab" role="tab" aria-selected="true" aria-controls="login-panel">Acceso</button>
+          <button id="register-tab" role="tab" aria-selected="false" aria-controls="register-panel" tabindex="-1">Registro</button>
+        </div>
+
+        <div id="login-panel" role="tabpanel" aria-labelledby="login-tab">
+          <p class="panel-kicker">ACTIVA LA ESCENA</p>
+          <h2>La cuadrilla te acompaña</h2>
+          <form id="login-form" novalidate>
+            <label for="login-email">Correo de ejemplo</label>
+            <input id="login-email" name="email" type="email" autocomplete="email" placeholder="hola@ejemplo.com" required aria-describedby="login-email-error">
+            <span class="error" id="login-email-error"></span>
+            <label for="login-password">Clave de ejemplo</label>
+            <div class="password">
+              <input id="login-password" name="password" type="password" autocomplete="current-password" minlength="8" placeholder="8 caracteres" required aria-describedby="login-password-error">
+              <button type="button" data-password="login-password" aria-label="Mostrar clave">Mostrar</button>
+            </div>
+            <span class="error" id="login-password-error"></span>
+            <button class="submit" type="submit">Completar la escena <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+
+        <div id="register-panel" role="tabpanel" aria-labelledby="register-tab" hidden>
+          <p class="panel-kicker">NUEVA MISIÓN</p>
+          <h2>Prepara otro personaje</h2>
+          <form id="register-form" novalidate>
+            <label for="register-email">Correo de ejemplo</label>
+            <input id="register-email" name="email" type="email" autocomplete="email" placeholder="hola@ejemplo.com" required aria-describedby="register-email-error">
+            <span class="error" id="register-email-error"></span>
+            <label for="register-password">Clave de ejemplo</label>
+            <div class="password">
+              <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="8 caracteres" required aria-describedby="register-password-error">
+              <button type="button" data-password="register-password" aria-label="Mostrar clave">Mostrar</button>
+            </div>
+            <span class="error" id="register-password-error"></span>
+            <button class="submit" type="submit">Completar la escena <span aria-hidden="true">→</span></button>
+          </form>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="actions">
+      <a class="primary" href="https://github.com/NachoTorresRD/animated-login-panel" target="_blank" rel="noreferrer">Ver código ↗</a>
+      <a href="https://wa.me/18093408435?text=Hola%20Nacho,%20vi%20el%20efecto%20Animated%20Login%20Panel%20y%20me%20gustar%C3%ADa%20usarlo%20en%20mi%20p%C3%A1gina." target="_blank" rel="noreferrer">Usar este efecto</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with <a href="https://github.com/NachoTorresRD/nt-skill-supreme" target="_blank" rel="noreferrer">NT-SKILL SUPREME</a> by Nacho Torres</p>
+    <a href="https://www.ntdesweb.com" target="_blank" rel="noreferrer">NTDESWEB</a>
+  </footer>
+</body>
+</html>

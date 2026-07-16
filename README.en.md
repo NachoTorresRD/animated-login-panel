@@ -2,14 +2,15 @@
 
 ![Preview](assets/preview.svg)
 
-A visual sign-in and registration panel with animated tabs, local validation, and password visibility controls.
+A compact sign-in and registration panel with a tiny animated crew that reacts to every form step.
 
 ## Features
 
 - Accessible login and registration tabs.
 - Frontend validation with field-associated errors.
-- Show/hide password controls.
-- Never stores or sends information.
+- A courier delivers the email as the user types.
+- A guard covers their eyes while the password is hidden and peeks when revealed.
+- A shared jump-and-confetti celebration after successful validation.
 
 ## Live demo
 
@@ -21,7 +22,7 @@ Clone the repository, enter `animated-login-panel`, and open `index.html`.
 
 ## Project structure
 
-Forms in `index.html`, visual states in `style.css`, validation in `script.js`, and SVG assets in `assets/`.
+Forms and characters in `index.html`, animation states in `style.css`, and interaction and validation in `script.js`.
 
 ## Customization
 
@@ -33,7 +34,7 @@ Arrow-key tabs, native labels, `aria-invalid`, linked errors, and focus on the f
 
 ## Performance
 
-No dependencies, network requests, or storage; transitions use lightweight visual properties.
+No dependencies, network requests, or storage; the characters use HTML and CSS and honor `prefers-reduced-motion`.
 
 ## License and credits
 
