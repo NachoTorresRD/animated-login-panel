@@ -14,7 +14,7 @@ Panel compacto de acceso y registro con una pequeña cuadrilla animada que reacc
 
 ## Demo en vivo
 
-[animatedfx.ntdesweb.dev](https://animatedfx.ntdesweb.dev/)
+[login.ntdesweb.dev](https://login.ntdesweb.dev/)
 
 ## Instalación
 

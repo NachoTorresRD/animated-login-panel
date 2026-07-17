@@ -14,7 +14,7 @@ A compact sign-in and registration panel with a tiny animated crew that reacts t
 
 ## Live demo
 
-[animatedfx.ntdesweb.dev](https://animatedfx.ntdesweb.dev/)
+[login.ntdesweb.dev](https://login.ntdesweb.dev/)
 
 ## Installation
 
