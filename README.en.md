@@ -16,6 +16,12 @@ A compact sign-in and registration panel with a tiny animated crew that reacts t
 
 [login.ntdesweb.dev](https://login.ntdesweb.dev/)
 
+## More effect demos
+
+- [Floating Navbar](https://navbar.ntdesweb.dev/)
+- [Spotlight Card](https://spotlight.ntdesweb.dev/)
+- [3D Product Card](https://card3d.ntdesweb.dev/)
+
 ## Installation
 
 Clone the repository, enter `animated-login-panel`, and open `index.html`.

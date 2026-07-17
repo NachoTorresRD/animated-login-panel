@@ -1,0 +1,8 @@
+.actions {
+  flex-wrap: wrap;
+}
+
+.actions .more-effects {
+  background: rgba(255, 255, 255, 0.035);
+  white-space: nowrap;
+}

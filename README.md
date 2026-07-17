@@ -16,6 +16,12 @@ Panel compacto de acceso y registro con una pequeña cuadrilla animada que reacc
 
 [login.ntdesweb.dev](https://login.ntdesweb.dev/)
 
+## Más demos de efectos
+
+- [Floating Navbar](https://navbar.ntdesweb.dev/)
+- [Spotlight Card](https://spotlight.ntdesweb.dev/)
+- [3D Product Card](https://card3d.ntdesweb.dev/)
+
 ## Instalación
 
 Clona el repositorio, entra en `animated-login-panel` y abre `index.html`.
