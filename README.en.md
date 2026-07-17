@@ -14,7 +14,7 @@ A compact sign-in and registration panel with a tiny animated crew that reacts t
 
 ## Live demo
 
-[animated-login-panel.netlify.app](https://animated-login-panel.netlify.app)
+[animatedfx.ntdesweb.dev](https://animatedfx.ntdesweb.dev/)
 
 ## Installation
 
