@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { AlertCircle, ArrowRight, CheckCircle2, Eye, EyeOff, Lock, Mail } from 'lucide-react';
 
 interface LoginFormProps {
-  formContainerRef: React.RefObject<HTMLDivElement>;
+  formContainerRef: React.RefObject<HTMLDivElement | null>;
   isInteractive: boolean;
   onFocusEmail: () => void;
   onFocusPassword: () => void;

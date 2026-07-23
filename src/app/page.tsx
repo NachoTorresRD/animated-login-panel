@@ -130,7 +130,7 @@ export default function Home() {
             <strong className="uppercase text-cyan-300">{interactionState.focusedField}</strong>
           </span>
         </div>
-        <p>Next.js 14, React Three Fiber y GSAP</p>
+        <p>Next.js 15, React Three Fiber y GSAP</p>
       </footer>
     </main>
   );
