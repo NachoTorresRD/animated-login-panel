@@ -1,0 +1,28 @@
+# Dependencies and Next.js output
+/node_modules/
+/.next/
+/out/
+
+# Local environment and logs
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
+
+# Local QA and source assets not required at runtime
+/assets/*.HEIC
+/the-amazing-spiderman/
+/convert_fbx_to_glb.py
+/inspect_*.js
+/public/*.fbx
+/public/*.pdf
+/public/models/
+/public/textures/
+/public/glb/*
+!/public/glb/hero_animated.glb
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,49 +1,45 @@
-# Animated Login Panel
+# Animated 3D Login Panel
 
-![Vista previa](assets/preview.svg)
-
-Panel compacto de acceso y registro con una pequeña cuadrilla animada que reacciona a cada paso del formulario.
+Experiencia de acceso construida con Next.js, React Three Fiber, Three.js y GSAP. Un personaje 3D entra con una maroma, saluda, busca el panel, camina hasta él y lo empuja al centro antes de reaccionar al formulario.
 
 ## Características
 
-- Login y registro en tabs accesibles.
-- Validación frontend con errores asociados a cada campo.
-- Un mensajero entrega el correo mientras el usuario escribe.
-- Un guardián se cubre los ojos al escribir la contraseña y mira al mostrarla.
-- Celebración conjunta con salto y confeti al completar el formulario.
+- Secuencia 3D por estados: maroma, saludo, búsqueda, caminata, empuje y celebración.
+- Transiciones suaves entre clips de animación GLB.
+- Reacciones al correo, la contraseña y la validación del formulario.
+- Diseño adaptable para escritorio, tablet y móvil.
+- Controles para repetir o saltar la introducción.
+- Compatibilidad con `prefers-reduced-motion`.
+- Etiquetas, foco visible y mensajes accesibles para el formulario.
 
-## Demo en vivo
+## Desarrollo local
 
-[login.ntdesweb.dev](https://login.ntdesweb.dev/)
+```bash
+npm install
+npm run dev
+```
 
-## Más demos de efectos
+Abre [http://localhost:3000](http://localhost:3000).
 
-- [Floating Navbar](https://navbar.ntdesweb.dev/)
-- [Spotlight Card](https://spotlight.ntdesweb.dev/)
-- [3D Product Card](https://card3d.ntdesweb.dev/)
+Para validar el build de producción:
 
-## Instalación
+```bash
+npm run build
+npm start
+```
 
-Clona el repositorio, entra en `animated-login-panel` y abre `index.html`.
+## Estructura principal
 
-## Estructura del proyecto
+- `src/hooks/useLoginSequence.ts`: secuencia y posiciones del personaje y el panel.
+- `src/components/AnimatedCharacter.tsx`: carga del GLB y control de clips.
+- `src/components/CharacterScene.tsx`: Canvas, cámara, luces y partículas.
+- `src/components/LoginForm.tsx`: formulario y estados interactivos.
+- `public/glb/hero_animated.glb`: modelo final con todos los clips requeridos.
 
-Formularios y personajes en `index.html`, animaciones y estados visuales en `style.css`, e interacción y validación en `script.js`.
+## Importante
 
-## Cómo personalizarlo
+El login es una demostración visual. La validación actual ocurre en el navegador y no está conectada a un sistema real de autenticación.
 
-Adapta los campos, mensajes de validación y tokens de color; conecta un backend solo tras añadir seguridad real.
+## Licencia
 
-## Accesibilidad
-
-Tabs operables con flechas, etiquetas nativas, `aria-invalid`, errores enlazados y foco en el primer error.
-
-## Rendimiento
-
-Sin dependencias, solicitudes de red ni almacenamiento; los personajes están construidos con HTML y CSS y respetan `prefers-reduced-motion`.
-
-## Licencia y créditos
-
-[MIT](LICENSE). Creado por [Nacho Torres](https://github.com/NachoTorresRD) para [NTDESWEB](https://www.ntdesweb.com) con [NT-SKILL SUPREME](https://github.com/NachoTorresRD/nt-skill-supreme).
-
-[Ver en GitHub](https://github.com/NachoTorresRD/animated-login-panel) · [Trabajar con NTDESWEB](https://www.ntdesweb.com)
+[MIT](LICENSE). Creado por [Nacho Torres](https://github.com/NachoTorresRD) para [NTDESWEB](https://www.ntdesweb.com).

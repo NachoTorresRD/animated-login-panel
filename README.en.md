@@ -1,49 +1,45 @@
-# Animated Login Panel
+# Animated 3D Login Panel
 
-![Preview](assets/preview.svg)
-
-A compact sign-in and registration panel with a tiny animated crew that reacts to every form step.
+An interactive sign-in experience built with Next.js, React Three Fiber, Three.js, and GSAP. A 3D character enters with a somersault, waves, searches for the panel, walks toward it, and pushes it into place before reacting to the form.
 
 ## Features
 
-- Accessible login and registration tabs.
-- Frontend validation with field-associated errors.
-- A courier delivers the email as the user types.
-- A guard covers their eyes while the password is hidden and peeks when revealed.
-- A shared jump-and-confetti celebration after successful validation.
+- State-driven 3D sequence: somersault, wave, search, walk, push, and celebration.
+- Smooth transitions between GLB animation clips.
+- Character reactions to email, password, and validation states.
+- Responsive layouts for desktop, tablet, and mobile.
+- Controls to replay or skip the introduction.
+- `prefers-reduced-motion` support.
+- Accessible labels, visible focus states, and form feedback.
 
-## Live demo
+## Local development
 
-[login.ntdesweb.dev](https://login.ntdesweb.dev/)
+```bash
+npm install
+npm run dev
+```
 
-## More effect demos
+Open [http://localhost:3000](http://localhost:3000).
 
-- [Floating Navbar](https://navbar.ntdesweb.dev/)
-- [Spotlight Card](https://spotlight.ntdesweb.dev/)
-- [3D Product Card](https://card3d.ntdesweb.dev/)
+To validate the production build:
 
-## Installation
+```bash
+npm run build
+npm start
+```
 
-Clone the repository, enter `animated-login-panel`, and open `index.html`.
+## Main structure
 
-## Project structure
+- `src/hooks/useLoginSequence.ts`: character and panel sequence and positioning.
+- `src/components/AnimatedCharacter.tsx`: GLB loading and clip controller.
+- `src/components/CharacterScene.tsx`: Canvas, camera, lighting, and particles.
+- `src/components/LoginForm.tsx`: form and interaction states.
+- `public/glb/hero_animated.glb`: final model containing the required clips.
 
-Forms and characters in `index.html`, animation states in `style.css`, and interaction and validation in `script.js`.
+## Important
 
-## Customization
+This login is a visual demonstration. Its current validation runs in the browser and is not connected to a real authentication system.
 
-Adapt fields, validation messages, and color tokens; only connect a backend after implementing real security.
+## License
 
-## Accessibility
-
-Arrow-key tabs, native labels, `aria-invalid`, linked errors, and focus on the first invalid field.
-
-## Performance
-
-No dependencies, network requests, or storage; the characters use HTML and CSS and honor `prefers-reduced-motion`.
-
-## License and credits
-
-[MIT](LICENSE). Created by [Nacho Torres](https://github.com/NachoTorresRD) for [NTDESWEB](https://www.ntdesweb.com) with [NT-SKILL SUPREME](https://github.com/NachoTorresRD/nt-skill-supreme).
-
-[View on GitHub](https://github.com/NachoTorresRD/animated-login-panel) · [Work with NTDESWEB](https://www.ntdesweb.com)
+[MIT](LICENSE). Created by [Nacho Torres](https://github.com/NachoTorresRD) for [NTDESWEB](https://www.ntdesweb.com).
