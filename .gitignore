@@ -2,10 +2,12 @@
 /node_modules/
 /.next/
 /out/
+/.wrangler/
 
 # Local environment and logs
 .env*
 !.env.example
+.dev.vars*
 *.log
 *.tsbuildinfo
 

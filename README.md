@@ -25,8 +25,18 @@ Para validar el build de producción:
 
 ```bash
 npm run build
-npm start
+npm run preview
 ```
+
+## Despliegue en Cloudflare
+
+La aplicación usa la exportación estática de Next.js. `npm run build` genera `out/` y Wrangler publica ese directorio como los assets del Worker:
+
+```bash
+npm run deploy
+```
+
+En Cloudflare Workers Builds usa `npm run build` como Build command y `npx wrangler deploy` como Deploy command. Para un proyecto de Cloudflare Pages, selecciona **Next.js (Static HTML Export)** y usa `out` como directorio de salida.
 
 ## Estructura principal
 
